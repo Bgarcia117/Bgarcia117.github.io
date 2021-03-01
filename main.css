@@ -1,0 +1,305 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #181818;
+  /* background: white; */
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 5px solid green; */
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  /* Note to self: use z index beause the position is fixed and not static */
+  z-index: 1;
+  top: 0;
+  left: 0; 
+  background-color: #181818;
+  /* This can be use to prevent text from going off of the box */
+  /* overflow-x: hidden; */
+  padding-top: 20px; 
+  }
+  
+.navbar a {
+  padding: 6px 6px 40px 13px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #909096;
+  display: block;
+}
+
+#home {
+  margin-left: 0px;
+}
+
+#about {
+  margin-left: 2px;
+}
+
+.navbar b {
+  display: none;
+  padding-bottom: 17px;
+  font-size: 12px;
+  margin-left: -5px;
+  text-transform: uppercase;
+  color: #fc0e49;
+}
+
+/* Turning the icons into text when hovered over */
+.navbar a:hover {
+  color: #f1f1f1;
+}
+
+.navbar a:hover i {
+  display: none;
+}
+
+.navbar a:hover b {
+  display: block;
+}
+
+/* Fixing and centering the words on the icons */
+.navbar #home b {
+  margin-left: -6px;
+}
+
+.navbar #about b {
+  margin-left: -11px;
+}
+
+.navbar #skills b {
+  margin-left: -7px;
+}
+
+.navbar #resume b {
+  font-size: 10px;
+  margin-left: -8px;
+  margin-top: 3px;
+}
+
+.navbar #contact b {
+  font-size: 9px;
+  margin-left: -9px;
+  margin-top: 4px;
+}
+
+/* CSS for the video background */
+
+.main {
+  /* This is to position text above the image and video */
+  position: relative;
+  /* vh determines the height of the element by setting it to a percentage of the viewport. vw is used for width */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* So text does not go right up to the edge of smaller screen size */
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 75px;
+  color: #fc0e49;
+  
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  background-image: url(cover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(29, 29, 29, 0.6);
+}
+
+.content {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  color: white;
+  z-index: 3;
+  margin-left: 80px;
+  /* text-align: center; */
+}
+
+/* About Section */
+#about_content {
+  margin-left: 60px;
+  float: left; width: 50%;
+}
+
+p, h2 {
+  color: white;
+}
+
+/* Skills Section */
+#skills_section {
+  background-color: rgb(29, 29, 29);
+}
+
+.containertwo {
+  margin-left: 60px;
+  text-align: center;
+}
+
+.iconcontainer {
+  margin-left: 60px;
+  color: #fc0e49;
+  /* border: 5px solid black; */
+  display: grid;
+  /* grid-row: 50px; */
+  /* grid-column: 100px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  padding: 10px;
+  text-align: center;
+}
+
+section div i {
+  font-size: 60px;
+  /* padding: 3em 3em 3em 3em; */
+  /* padding: 30% 30%; */
+  /* margin: 25px; */
+  border: 2px solid black;
+  background-color: #181818;
+  margin-bottom: 100px;
+}
+
+/* Styles for the flex grid */
+
+#html_icon {
+  /* grid-column: 1 / 2; */
+  padding: 20% 28%;
+}
+
+#css3_icon {
+  /* grid-column: 2 / 3; */
+  padding: 20% 31%;
+}
+
+#sass_icon {
+  /* grid-column: 3 / 4; */
+  padding: 20% 31%;
+}
+
+#bootstrap_icon {
+  /* grid-column: 1 / 2; */
+  padding: 20% 24%;
+}
+
+#js_icon {
+  padding: 20% 21.5%;
+}
+
+#chrome_icon {
+  padding: 20% 5%;
+}
+
+#react_icon {
+  padding: 20% 30.7%;
+}
+
+#git_icon {
+  padding: 20% 36%;
+}
+
+#terminal_icon {
+  padding: 20% 23.5%;
+}
+
+section div label {
+  color: #fc0e49;
+  font-size: 45px;
+}
+
+/* Styles for Contact Page */
+#contact_body {
+  background-color: rgb(29, 29, 29);
+}
+
+#contact_title, #social_media{
+  text-align: center;
+  font-size: 55px;
+  color: #fc0e49;
+}
+
+#social_media {
+  font-size: 35px;
+}
+
+#form {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_types {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+label {
+  color: white;
+}
+
+#submit_button {
+  display: inline-block;
+  margin: 25px;
+  padding: 15px 30px;
+  background:#181818;
+  color: white;
+  border: 2px solid #fc0e49;
+  border-radius: 10px;
+  font-size: 15px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+#submit_button:hover {
+  transform: scale(0.95);
+}
+
+.icon_container {
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_icons {
+  color: white;
+  font-size: 60px;
+  padding: 0px 20px;
+}
+
+.contact_icons:hover {
+  transform: scale(1.1);
+}
