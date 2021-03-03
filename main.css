@@ -162,8 +162,8 @@ p, h2 {
   background-color: rgb(29, 29, 29);
 }
 
-.containertwo {
-  margin-left: 60px;
+.titles {
+  /* margin-left: 60px; */
   text-align: center;
 }
 
@@ -194,42 +194,67 @@ section div i {
 
 #html_icon {
   /* grid-column: 1 / 2; */
-  padding: 20% 28%;
+  padding: 100px 115px;
 }
 
 #css3_icon {
   /* grid-column: 2 / 3; */
-  padding: 20% 31%;
+  padding: 100px 135px;
 }
 
 #sass_icon {
   /* grid-column: 3 / 4; */
-  padding: 20% 31%;
+  padding: 100px 135px;
 }
 
 #bootstrap_icon {
   /* grid-column: 1 / 2; */
-  padding: 20% 24%;
+  padding: 100px 110px;
 }
 
 #js_icon {
-  padding: 20% 21.5%;
+  padding: 100px 95px;
 }
 
 #chrome_icon {
-  padding: 20% 5%;
+  padding: 100px 20px;
+  /* word-wrap: break-word; */
 }
 
 #react_icon {
-  padding: 20% 30.7%;
+  padding: 100px 140px;
 }
 
 #git_icon {
-  padding: 20% 36%;
+  padding: 100px 160px;
 }
 
 #terminal_icon {
-  padding: 20% 23.5%;
+  padding: 100px 100px;
+}
+
+#axios_icon {
+  padding: 100px 135px;
+}
+
+#node_icon {
+  padding: 100px 125px;
+}
+
+#express_icon {
+  padding: 100px 100px;
+}
+
+#mongo_icon {
+  padding: 100px 90px;
+}
+
+#my_icon {
+  padding: 100px 115px;
+}
+
+#python_icon {
+  padding: 100px 100px;
 }
 
 section div label {
