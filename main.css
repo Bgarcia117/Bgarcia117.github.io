@@ -167,7 +167,7 @@ p, h2 {
   text-align: center;
 }
 
-.iconcontainer {
+.iconcontainer, .anotherContainer {
   margin-left: 60px;
   color: #fc0e49;
   /* border: 5px solid black; */
@@ -254,12 +254,31 @@ section div i {
 }
 
 #python_icon {
-  padding: 100px 100px;
+  padding: 100px 125px;
+}
+
+#swift_icon {
+  padding: 100px 145px;
+}
+
+#cplus_icon {
+  padding: 100px 145px;
+}
+
+#csharp_icon {
+  padding: 100px 160px;
+}
+
+#java_icon {
+  padding: 100px 160px;
 }
 
 section div label {
   color: #fc0e49;
   font-size: 45px;
+}
+.icon_label {
+  /* color: blue; */
 }
 
 /* Styles for Contact Page */
