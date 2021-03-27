@@ -88,7 +88,7 @@ body {
 
 .main {
   /* This is to position text above the image and video */
-  position: relative;
+  /* position: relative; */
   /* vh determines the height of the element by setting it to a percentage of the viewport. vw is used for width */
   height: 100vh;
   display: flex;
@@ -97,6 +97,14 @@ body {
   justify-content: center;
   /* So text does not go right up to the edge of smaller screen size */
   padding: 0 20px;
+  /* Test */
+  position: fixed;
+  right: 60;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 h1 {
@@ -116,6 +124,12 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* test */
+  position: fixed;
+  right: 60;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 video {
@@ -125,6 +139,12 @@ video {
   top: 0;
   left: 0;
   object-fit: cover;
+  /* Test */
+  position: fixed;
+  right: 60;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 .cover {
   position: absolute;
@@ -155,6 +175,62 @@ video {
 
 p, h2 {
   color: white;
+}
+
+/* Bubble styling for About Section */
+.bubbles i{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+  color: #fc0e49;
+}
+.bubbles{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+@keyframes bubble{
+  0%{
+      transform: translateY(0);
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  70%{
+      opacity: 1;
+  }
+  100%{
+      transform: translateY(-80vh);
+      opacity: 0;
+  }
+}
+.bubbles i:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2){
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+  animation-delay: 3s;
+  width: 30px;
+}
+.bubbles img:nth-child(4){
+  animation-delay: 4.5s;
+  width:20px;
+}
+.bubbles img:nth-child(5){
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+  animation-delay: 6s;
+  width: 35px;
+}
+.bubbles img:nth-child(7){
+  animation-delay: 7s;
 }
 
 /* Skills Section */
